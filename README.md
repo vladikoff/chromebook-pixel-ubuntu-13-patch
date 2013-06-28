@@ -7,15 +7,19 @@ a series of patches and fixes to get touchpad, touchscreen and sound working in 
 ### Touchpad and Touchscreen
 dpkg the deb files provided
 
+```
 sudo dpkg -i *.deb
 sudo update-initramfs -u
 sudo reboot
+```
 
 ### Sound Fix
 
+```
 sudo chmod +x install_firmware_from_alsa_project.sh
 sudo ./install_firmware_from_alsa_project.sh
 sudo reboot
+```
 
 ## Useful links
 
