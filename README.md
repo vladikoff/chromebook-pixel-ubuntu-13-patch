@@ -2,8 +2,6 @@
 
 a series of patches and fixes to get touchpad, touchscreen and sound working in ubuntu 13.04 on the Chromebook Pixel.
 
-## Chromebook developer mode
-
 ## Driver Instructions
 
 ### Touchpad and Touchscreen
