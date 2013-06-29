@@ -21,6 +21,27 @@ sudo ./install_firmware_from_alsa_project.sh
 sudo reboot
 ```
 
+### Unity with a high DPI display
+Unity does not support high DPI displays well. The following tweaks will help.
+- Install unity-tweak
+    sudo apt-get install unity-tweak-tool
+- In Fonts, change Text Scaling Factor. I like 1.5
+- In Cursor, select use large cursor for a normal size cursor (will not take effect until reboot)
+- In Launcher, increase the Icon Size. I like 64. It's not possible to go higher.
+- Most web browsers support a default zoom. In Google Chrome go into settings and search for zoom. 
+- Window borders can be made larger by editing 
+/usr/share/themes/Ambiance/metacity-1/metacity-theme-1.xml
+and setting 
+
+```
+<distance name="left_width" value="1"/>
+<distance name="right_width" value="1"/>
+<distance name="bottom_height" value="1"/>
+```
+
+Change the 1 to a higher value like 2 or 3.
+
+
 ## Useful links
 
 old instructions here: http://vger.kernel.org/~davem/chromebook_pixel_linux.txt still sometimes useful
